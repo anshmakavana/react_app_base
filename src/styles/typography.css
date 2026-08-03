@@ -1,0 +1,63 @@
+/* typography.css */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("../assets/fonts/League_Spartan.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+p,
+span,
+a {
+  font-size: var(--text-md);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+h5 {
+  font-size: var(--text-md);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+small {
+  font-size: var(--text-sm);
+  font-weight: 400;
+}
+
+label {
+  font-size: var(--text-md);
+  font-weight: 500;
+}

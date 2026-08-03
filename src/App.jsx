@@ -1,0 +1,6 @@
+import "./styles/global.css";
+import AppRouter from "./router";
+
+const App = () => <AppRouter />;
+
+export default App;

@@ -1,0 +1,23 @@
+/* global.css */
+@import "./variables.css"; /* 1st — tokens loaded first */
+@import "./reset.css"; /* 2nd — clean slate */
+@import "./typography.css"; /* 3rd — text rules */
+@import "./utilities.css"; /* 4th — reusable classes */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+
+  background-color: var(--color-body);
+  color: var(--color-text);
+
+  font-family: var(--font-primary);
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
