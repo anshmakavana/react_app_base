@@ -1,0 +1,33 @@
+.sidebar {
+  width: 320px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: violet;
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-40px);
+  transition:
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+.isOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.sidebar button {
+  background-color: transparent;
+  border: none;
+
+  /* position */
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+}

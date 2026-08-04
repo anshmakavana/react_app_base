@@ -4,15 +4,12 @@
   right: 0;
   top: 0;
   background-color: var(--color-white);
-  box-shadow: var(--shadow-sm);
   z-index: 100;
 
   /* Smooth transition setup */
   opacity: 0;
   visibility: hidden;
   transform: translateY(-80px);
-  overflow: hidden;
-  pointer-events: none;
   transition:
     opacity 0.2s ease-in-out,
     visibility 0.2s ease-in-out,
@@ -23,7 +20,6 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  pointer-events: auto;
 }
 
 .dropdownCloseBtn {

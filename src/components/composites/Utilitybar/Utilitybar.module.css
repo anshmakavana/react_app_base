@@ -1,0 +1,21 @@
+.utilitybar {
+  height: var(--utilitybar-height);
+  display: flex;
+  align-items: center;
+  background-color: var(--color-tertiary);
+  padding: 0 var(--space-md);
+}
+
+.utilitybar button{
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs);
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--space-xs);
+}
+
+.utilitybar button:hover{
+    border-color: var(--color-primary);
+}
