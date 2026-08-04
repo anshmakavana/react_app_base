@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 360px;
+  min-width: var(--content-min-width);
 
   background-color: var(--color-body);
   color: var(--color-text);

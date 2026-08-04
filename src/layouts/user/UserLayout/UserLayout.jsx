@@ -3,6 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Sidebar from "../Sidebar";
 import Dropdown from "../Dropdown";
+import Overlay from "../../../components/composites/Overlay";
 import styles from "./UserLayout.module.css";
 
 const UserLayout = () => {
@@ -19,6 +20,8 @@ const UserLayout = () => {
       <Sidebar />
 
       <Dropdown />
+
+      <Overlay />
     </div>
   );
 };

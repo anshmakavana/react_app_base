@@ -1,7 +1,7 @@
 .header{
     position: sticky;
     top: 0;
-    box-shadow: var(--shadow-ring-md);
     background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
     z-index: 50;
 }

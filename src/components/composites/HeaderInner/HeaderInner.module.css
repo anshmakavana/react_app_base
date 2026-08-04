@@ -1,5 +1,4 @@
 .headerInner{
-    max-width: var(--content-width);
-    padding: var(--space-md) 0;
+    max-width: var(--content-max-width);
     margin: auto;
 }
