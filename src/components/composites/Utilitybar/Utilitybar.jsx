@@ -3,6 +3,7 @@ import Button from "../../primitives/Button";
 import Image from "../../primitives/Image";
 import listIcon from "../../../assets/icons/list_icon.svg";
 import { useUi } from "../../../context/UiContext";
+import SecNav from "../SecNav";
 
 const Utilitybar = () => {
   const { setActiveSidebar, setIsSidebarOpen } = useUi();
@@ -18,6 +19,8 @@ const Utilitybar = () => {
         <Image src={listIcon} />
         <p>All</p>
       </Button>
+
+      <SecNav />
     </div>
   );
 };

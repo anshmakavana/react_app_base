@@ -1,6 +1,5 @@
 .dropdownInner{
     height: 100vh;
-    background-color: violet;
     overflow-y: auto;
     overflow-x: hidden;
     overscroll-behavior: contain;

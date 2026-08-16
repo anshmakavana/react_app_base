@@ -7,8 +7,8 @@ const DropdownInner = () => {
   return (
     <div className={styles.dropdownInner}>
       {activeDropdown === "mobileNav" ? "mobileNav" : ""}
-      {activeDropdown === "action2" ? "action2" : ""}
-      {activeDropdown === "action3" ? "action3" : ""}
+      {activeDropdown === "like" ? "like" : ""}
+      {activeDropdown === "cart" ? "cart" : ""}
     </div>
   );
 };

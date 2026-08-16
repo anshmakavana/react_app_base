@@ -1,0 +1,21 @@
+.navbarActions{
+    flex: 0 0 auto;
+    display: flex;
+    gap: var(--space-md);
+    /* margin-left: auto; */
+}
+
+.navbarActions li{
+    display: flex;
+}
+
+.navbarActions button{
+    background-color: transparent;
+    border: none;
+    padding: var(--space-xs);
+}
+
+.navbarActions button:hover{
+    background-color: var(--color-tertiary);
+    border-radius: var(--space-sm);
+}

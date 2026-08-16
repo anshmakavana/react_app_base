@@ -3,7 +3,7 @@
 :root {
   /* Layout */
   --navbar-height: 56px;
-  --utilitybar-height: 44px;
+  --utilitybar-height: 48px;
   --content-max-width: 1024px;
   --content-min-width: 360px;
   --page-min-height: 600px;
@@ -42,8 +42,7 @@
 
   --color-text: #000000;
 
-  --color-border: rgba(0, 0, 0, 0.15);
-  --color-border-bold: rgba(0, 0, 0, 0.3);
+  --color-border:#e0e8eb;
 
   --color-accent: #2d2dc0;
 

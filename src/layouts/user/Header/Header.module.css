@@ -2,5 +2,6 @@
     position: sticky;
     top: 0;
     background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
     z-index: 50;
 }

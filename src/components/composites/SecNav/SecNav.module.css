@@ -1,0 +1,21 @@
+.secNav{
+    height: 100%;
+    display: flex;
+    gap: var(--space-md);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) transparent;
+}
+
+.secNav a{
+    height: 100%;
+    padding: var(--space-sm);
+    display: flex;
+    align-items: center;
+}
+
+.secNav a:hover{
+    text-decoration: underline;
+}

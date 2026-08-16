@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.sm {
+  height: 16px;
+}
+.md {
+  height: 20px;
+}
+.lg {
+  height: 24px;
+}
+.xl {
+  height: 32px;
+}

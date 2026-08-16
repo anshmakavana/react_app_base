@@ -3,6 +3,10 @@ import Button from "../../primitives/Button";
 import Image from "../../primitives/Image";
 import menuIcon from "../../../assets/icons/menu_icon.svg";
 import { useUi } from "../../../context/UiContext";
+import Logo from "../Logo";
+import NavbarActions from "../NavbarActions";
+import NavbarLinks from "../NavbarLinks";
+import Searchbar from "../Searchbar";
 
 const Navbar = () => {
   const { setActiveDropdown, setIsDropdownOpen } = useUi();
@@ -14,7 +18,14 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <p>navbar</p>
+      <Logo size="md" alt="logo_black" />
+
+      <NavbarLinks className={styles.navbarLinks} />
+
+      <Searchbar />
+
+      <NavbarActions />
+
       <Button
         aria-label="menu"
         className={styles.navbarMenu}
