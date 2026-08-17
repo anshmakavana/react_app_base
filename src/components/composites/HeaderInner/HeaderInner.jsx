@@ -1,4 +1,5 @@
 import Navbar from "../Navbar";
+import Searchbar from "../Searchbar";
 import Utilitybar from "../Utilitybar";
 import styles from "./HeaderInner.module.css";
 

@@ -5,7 +5,7 @@ import Auth from "./pages/common/Auth";
 import Verification from "./pages/common/Verification";
 import NotFound from "./pages/common/NotFound";
 import Home from "./pages/user/Home";
-import About from "./pages/user/About";
+import Categories from "./pages/user/Categories";
 
 // layouts
 import UserLayout from "./layouts/user/UserLayout";
@@ -18,7 +18,7 @@ const AppRouter = () => {
 
       <Route path="/" element={<UserLayout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="categories" element={<Categories />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

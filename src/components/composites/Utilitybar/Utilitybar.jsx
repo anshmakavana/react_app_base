@@ -16,13 +16,15 @@ const Utilitybar = () => {
 
   return (
     <div className={styles.utilitybar}>
-      <Button onClick={openSidebar} className={styles.button}>
-        <Image src={listIcon} />
-      </Button>
-
-      <ProductNavigations className={styles.productNavigations} />
-
       <Searchbar className={styles.searchbar} />
+      
+      <div className={styles.navigations}>
+        <Button onClick={openSidebar} className={styles.button}>
+          <Image src={listIcon} />
+        </Button>
+
+        <ProductNavigations />
+      </div>
     </div>
   );
 };

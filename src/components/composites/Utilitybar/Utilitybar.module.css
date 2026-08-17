@@ -1,10 +1,15 @@
 .utilitybar {
-  height: var(--utilitybar-height);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.navigations {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
-  padding: 0 var(--space-md);
-  border-top: 1px solid var(--color-border);
+  gap: var(--space-sm);
 }
 
 .button {
@@ -22,24 +27,8 @@
   border-color: var(--color-primary);
 }
 
-.utilitybar .searchbar {
-  display: flex;
-}
-
-.utilitybar .productNavigations {
-  display: none;
-}
-
 @media (min-width: 576px) {
-  .button {
-    display: none;
-  }
-  
   .utilitybar .searchbar {
     display: none;
-  }
-
-  .utilitybar .productNavigations {
-    display: flex;
   }
 }

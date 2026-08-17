@@ -1,22 +1,23 @@
+import { Activity } from "react";
 import styles from "./ProductNavigations.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const productNavigations = [
   {
-    id: "nav1",
-    title: "nav1",
+    id: "/",
+    title: "Home",
   },
   {
-    id: "nav2",
-    title: "nav2",
+    id: "categories",
+    title: "Categories",
   },
   {
-    id: "nav3",
-    title: "nav3",
+    id: "rooms",
+    title: "Rooms",
   },
   {
-    id: "nav4",
-    title: "nav4",
+    id: "style",
+    title: "Styles",
   },
   {
     id: "nav5",
@@ -48,12 +49,20 @@ const productNavigations = [
   },
 ];
 
-const ProductNavigations = ({className = ''}) => {
+const ProductNavigations = ({ className = "" }) => {
   return (
     <ul className={`${styles.productNavigations} ${className}`}>
       {productNavigations.map((each) => (
-        <li>
-          <Link className={styles.link}>{each.title}</Link>
+        <li key={each.id}>
+          <NavLink
+            to={each.id}
+            className={({ isActive }) =>
+              `${styles.link} ${isActive ? styles.active : ""}`
+            }
+            end={each.id === "/"}
+          >
+            {each.title}
+          </NavLink>
         </li>
       ))}
     </ul>

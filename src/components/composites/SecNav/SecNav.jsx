@@ -6,8 +6,7 @@ const SecNav = () => {
   return (
     <div className={styles.secNav}>
       <Link className={styles.login}>Login</Link>
-
-      <ProductNavigations className={styles.productNavigations} />
+      {/* secondary navigations */}
     </div>
   );
 };

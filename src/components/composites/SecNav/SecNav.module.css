@@ -11,13 +11,3 @@
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-
-.secNav .productNavigations {
-  flex-direction: column;
-}
-
-@media (min-width: 576px) {
-  .secNav .productNavigations {
-    display: none;
-  }
-}

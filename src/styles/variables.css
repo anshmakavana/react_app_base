@@ -3,7 +3,6 @@
 :root {
   /* Layout */
   --navbar-height: 56px;
-  --utilitybar-height: 48px;
   --content-max-width: 1024px;
   --content-min-width: 360px;
   --page-min-height: 600px;
