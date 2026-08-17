@@ -4,9 +4,9 @@ import Button from "../../primitives/Button";
 import Image from "../../primitives/Image";
 import searchIcon from "../../../assets/icons/search_icon_dark.svg";
 
-const Searchbar = () => {
+const Searchbar = ({className = ''}) => {
   return (
-    <div className={styles.searchbar}>
+    <div className={`${styles.searchbar} ${className}`}>
       <Input type="search" placeholder="Search" />
       <Button>
         <Image src={searchIcon} />

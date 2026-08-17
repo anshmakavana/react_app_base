@@ -3,6 +3,7 @@ import Button from "../../primitives/Button";
 import Image from "../../primitives/Image";
 import heartIcon from "../../../assets/icons/heart_icon.svg";
 import cartIcon from "../../../assets/icons/cart_icon.svg";
+import profileIcon from '../../../assets/icons/profile_icon.svg'
 import { useUi } from "../../../context/UiContext";
 
 const navbarActions = [
@@ -13,6 +14,10 @@ const navbarActions = [
   {
     id: "cart",
     src: cartIcon,
+  },
+  {
+    id: "profile",
+    src: profileIcon,
   },
 ];
 

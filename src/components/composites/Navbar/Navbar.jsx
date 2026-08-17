@@ -1,11 +1,8 @@
 import styles from "./Navbar.module.css";
-import Button from "../../primitives/Button";
-import Image from "../../primitives/Image";
-import menuIcon from "../../../assets/icons/menu_icon.svg";
 import { useUi } from "../../../context/UiContext";
 import Logo from "../Logo";
+import NavbarAddress from "../NavbarAddress";
 import NavbarActions from "../NavbarActions";
-import NavbarLinks from "../NavbarLinks";
 import Searchbar from "../Searchbar";
 
 const Navbar = () => {
@@ -20,19 +17,11 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <Logo size="md" alt="logo_black" />
 
-      <NavbarLinks className={styles.navbarLinks} />
+      <NavbarAddress />
 
-      <Searchbar />
+      <Searchbar className={styles.searchbar}/>
 
       <NavbarActions />
-
-      <Button
-        aria-label="menu"
-        className={styles.navbarMenu}
-        onClick={openDropdown}
-      >
-        <Image src={menuIcon} alt="menu" />
-      </Button>
     </div>
   );
 };

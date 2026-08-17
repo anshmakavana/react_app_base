@@ -7,17 +7,39 @@
   border-top: 1px solid var(--color-border);
 }
 
-.utilitybar button{
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
-    padding: var(--space-xs);
-    background-color: transparent;
-    border: 1px solid var(--color-border);
-    border-radius: var(--space-xs);
+.button {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs);
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-xs);
 }
 
-.utilitybar button:hover{
-    border-color: var(--color-primary);
+.button:hover {
+  border-color: var(--color-primary);
+}
+
+.utilitybar .searchbar {
+  display: flex;
+}
+
+.utilitybar .productNavigations {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .button {
+    display: none;
+  }
+  
+  .utilitybar .searchbar {
+    display: none;
+  }
+
+  .utilitybar .productNavigations {
+    display: flex;
+  }
 }

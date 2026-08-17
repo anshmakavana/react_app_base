@@ -1,21 +1,23 @@
-.secNav{
-    height: 100%;
-    display: flex;
-    gap: var(--space-md);
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-border) transparent;
+.secNav {
+  background-color: transparent;
 }
 
-.secNav a{
-    height: 100%;
-    padding: var(--space-sm);
-    display: flex;
-    align-items: center;
+.login {
+  display: flex;
+  align-items: center;
+  padding: var(--space-md);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
-.secNav a:hover{
-    text-decoration: underline;
+.secNav .productNavigations {
+  flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .secNav .productNavigations {
+    display: none;
+  }
 }

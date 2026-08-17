@@ -7,9 +7,9 @@
 }
 
 .searchbar input{
-    width: 100px;
+    width: 180px;
     flex: 1 1 auto;
-    padding: 4px 8px;
+    padding: var(--space-xs) var(--space-sm);
     border: none;
     background-color: transparent;
     outline: none;
@@ -17,7 +17,8 @@
 
 .searchbar button{
     flex: 0 0 auto;
-    padding: 4px 8px;
+    padding: var(--space-xs) var(--space-sm);
     border: none;
+    border-left: 1px solid var(--color-primary);
     background-color: transparent;
 }

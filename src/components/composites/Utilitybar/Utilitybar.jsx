@@ -3,7 +3,8 @@ import Button from "../../primitives/Button";
 import Image from "../../primitives/Image";
 import listIcon from "../../../assets/icons/list_icon.svg";
 import { useUi } from "../../../context/UiContext";
-import SecNav from "../SecNav";
+import ProductNavigations from "../ProductNavigations";
+import Searchbar from "../Searchbar";
 
 const Utilitybar = () => {
   const { setActiveSidebar, setIsSidebarOpen } = useUi();
@@ -15,12 +16,13 @@ const Utilitybar = () => {
 
   return (
     <div className={styles.utilitybar}>
-      <Button onClick={openSidebar}>
+      <Button onClick={openSidebar} className={styles.button}>
         <Image src={listIcon} />
-        <p>All</p>
       </Button>
 
-      <SecNav />
+      <ProductNavigations className={styles.productNavigations} />
+
+      <Searchbar className={styles.searchbar} />
     </div>
   );
 };
